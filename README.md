@@ -1,5 +1,7 @@
 #RIMBA API
 
+Rimba API adalah aplikasi backend yang dibangun menggunakan Laravel. API ini menyediakan layanan untuk pengelolaan data pengguna, termasuk CRUD (Create, Read, Update, Delete). API ini juga dilengkapi dengan pengujian menggunakan Jest dan Supertest untuk memastikan fungsionalitasnya.
+
 ##Langkah Menjalankan testing API
 
 ###ersyaratan
@@ -72,5 +74,5 @@
     -Pengujian untuk membuat pengguna baru POST /api/users
 
     -Pengujian untuk memperbarui pengguna PUT /api/users/{id}
-    
+
     -Pengujian untuk menghapus pengguna DELETE /api/users/{id}
