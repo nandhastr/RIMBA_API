@@ -13,9 +13,12 @@ class UserController extends Controller
     public function index()
     {
         try {
-            $user = User::all();
-
-            return response()->json(new UserResource(200, 'success', $user),200);
+            $users = User::all();
+            $data = [
+                'users' => $users
+            ];
+            // return response()->json(new UserResource(200, 'success', $user),200);
+            return view('users.page', $data);
         } catch (\Throwable $e) {
             return response()->json(new UserResource(500, 'error : ' . $e->getMessage(), null),500);
         }
