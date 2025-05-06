@@ -10,4 +10,4 @@ Route::middleware('validate.user.input')->group(function (){
 
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/users/{id}', [UserController::class, 'show']);
-Route::delete('/users/{id}', [UserController::class, 'destroy']);
+Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
